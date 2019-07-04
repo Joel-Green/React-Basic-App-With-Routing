@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  background-color: black;
+}
+
+.header div link {
+  background: red;
+  /* textdecoration: none; */
+  color: white;
+}
+
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  background: black;
+  color: white;
+}

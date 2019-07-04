@@ -1,25 +1,23 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import AppRouter from './components/TestComponent';
+import Header from './components/Header';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Middle1 from './components/Middle1';
+import Middle2 from './components/Middle2';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      {/* here we define the paths for the routes */}
+      <Route exact path='/' component={Middle1} />
+      <Route path='/middle2' component={Middle2} />
+
+      <Footer />
+    </Router>
   );
 }
 
