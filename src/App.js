@@ -1,7 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import AppRouter from './components/TestComponent';
 import Header from './components/Header';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Middle1 from './components/Middle1';
